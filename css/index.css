@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    overscroll-behavior: contain;
+}
+
+.white-key {
+    background-color: white;
+    width: 100vw;
+    height: 72px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-color: lightgray;
+    transition: background-color 0.2s;
+}
+
+.white-key.pressed {
+    background-color: lightgray;
+}
+
+.black-key {
+    position: relative;
+    z-index: 1;
+    top: -24px;
+    background-color: black;
+    width: 50vw;
+    float: right;
+    height: 48px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    /* border-color: darkgray; */
+    transition: background-color 0.2s;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 0 0.25em black;
+}
+
+.black-key.pressed {
+    /* background-color: darkgray; */
+    box-shadow: 0 0 0.125em black;
+}
